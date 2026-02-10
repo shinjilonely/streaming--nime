@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Anime - AnimeStream</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-play-circle"></i>
+                <span>AnimeStream</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="#" id="seasonalLink">Seasonal</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search anime...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Video Player Section -->
+    <section class="player-section">
+        <div class="container-fluid">
+            <div class="player-container">
+                <div id="videoPlayer" class="video-player">
+                    <!-- Demo Notice -->
+                    <div class="demo-notice">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>Demo Mode</h3>
+                        <p>This is a demonstration project. Please use legal streaming services like:</p>
+                        <ul>
+                            <li>Crunchyroll</li>
+                            <li>Funimation</li>
+                            <li>Netflix</li>
+                            <li>Hulu</li>
+                        </ul>
+                        <p>Support the anime industry by watching through official channels!</p>
+                    </div>
+                </div>
+                
+                <!-- Player Controls -->
+                <div class="player-info">
+                    <h2 id="animeTitle">Loading...</h2>
+                    <p id="episodeTitle">Episode loading...</p>
+                </div>
+
+                <!-- Quality & Settings -->
+                <div class="player-settings">
+                    <button class="settings-btn">
+                        <i class="fas fa-cog"></i> Quality: 1080p
+                    </button>
+                    <button class="settings-btn">
+                        <i class="fas fa-closed-captioning"></i> Subtitles: Indonesian
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Navigation -->
+    <section class="episode-nav-section">
+        <div class="container">
+            <div class="episode-navigation">
+                <button id="prevEpisode" class="nav-btn">
+                    <i class="fas fa-chevron-left"></i> Previous Episode
+                </button>
+                <span id="currentEpisode">Episode 1</span>
+                <button id="nextEpisode" class="nav-btn">
+                    Next Episode <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Episodes -->
+    <section class="related-episodes">
+        <div class="container">
+            <h3><i class="fas fa-list"></i> All Episodes</h3>
+            <div id="allEpisodes" class="episodes-list-horizontal">
+                <!-- Episodes will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-play-circle"></i> AnimeStream</h3>
+                    <p>Your destination for watching anime online. Educational project for learning web development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AnimeStream. Educational project. Please support official releases.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/watch.js"></script>
+</body>
+</html>
